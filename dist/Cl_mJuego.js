@@ -3,7 +3,7 @@ export default class Cl_mJuego {
         this.equipos = [];
     }
     AgregarEquipo({ equipo, callback, }) {
-        const nombreRepetido = this.equipos.find((e) => e.nombreEquipo.trim() === equipo.nombreEquipo.trim());
+        const nombreRepetido = this.equipos.find((e) => e.nombreEquipo.toUpperCase().trim() === equipo.nombreEquipo.toUpperCase().trim());
         if (nombreRepetido) {
             callback("El nombre del equipo ya existe");
             return;

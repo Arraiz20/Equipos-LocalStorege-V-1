@@ -9,7 +9,7 @@ export default class Cl_mJuego {
     callback: (error: string | false) => void;
   }): void {
     const nombreRepetido = this.equipos.find(
-      (e) => e.nombreEquipo.trim() === equipo.nombreEquipo.trim()
+      (e) => e.nombreEquipo.toUpperCase().trim() === equipo.nombreEquipo.toUpperCase().trim()
     );
     if (nombreRepetido) {
       callback("El nombre del equipo ya existe");

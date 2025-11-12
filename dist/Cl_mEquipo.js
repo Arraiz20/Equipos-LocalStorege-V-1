@@ -21,10 +21,10 @@ export default class Cl_mEquipo {
     }
     // Nombre del Equipo
     set nombreEquipo(nombreEquipo) {
-        this._nombreEquipo = nombreEquipo.trim();
+        this._nombreEquipo = nombreEquipo.toUpperCase().trim();
     }
     get nombreEquipo() {
-        return this._nombreEquipo.trim();
+        return this._nombreEquipo;
     }
     //Datos del Jugador 1
     set nombre1(nombre1) {
