@@ -1,0 +1,146 @@
+/* --- ESTILOS GENERALES Y LAYOUT --- */
+
+body {
+    /* Fuente más moderna y fácil de leer */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9; /* Fondo muy suave */
+    padding: 20px;
+}
+
+section {
+    /* Aumento el ancho para acomodar la tabla */
+    width: 900px;
+    border: 3px solid #0056b3; /* Azul más oscuro y profesional */
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px; /* Bordes más suaves */
+    background-color: #ffffff; /* Fondo blanco para las secciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h3 {
+    /* Estilo original de encabezado azul */
+    color: white;
+    background-color: #0056b3; /* El mismo azul de los bordes */
+    padding: 8px; /* Más espacio */
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0; /* Elimina el margen superior por defecto */
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-style: italic;
+    font-weight: normal;
+    color: #2e8b57; /* SeaGreen */
+}
+
+label {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- ESTILOS DE BOTONES E INPUTS --- */
+
+button {
+    margin-top: 15px;
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px; /* Más padding para un mejor toque */
+    font-size: 14px; /* Un poco más grande */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #0056b3; /* Oscurece al pasar el ratón */
+}
+
+input {
+    width: 100px; /* Un poco más de espacio para inputs */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* --- ESTILOS DE TABLA (Mejora estética clave) --- */
+
+table {
+    width: 100%; /* Ocupa todo el ancho de la sección */
+    border-collapse: collapse; /* Bordes simples */
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+th,
+td {
+    border: 1px solid #ddd; /* Bordes de tabla más suaves */
+    text-align: center;
+    padding: 8px 4px; /* Espacio para el contenido */
+}
+
+thead th {
+    /* Estilo de encabezado de tabla */
+    background-color: #e9ecef; /* Gris claro */
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo para filas alternas (facilita la lectura) */
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Resaltar la fila al pasar el ratón */
+tbody tr:hover {
+    background-color: #e2e6ea;
+}
+
+
+/* --- FLEX LAYOUT (Mantenimiento de los originales) --- */
+
+#juego {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#ficha {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+}
+
+#mainForm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+/* --- OTROS ESTILOS --- */
+
+.colCurrency {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.colNumber {
+    column-width: 50px;
+}
+
+.divSalida {
+    display: flex;
+    flex-direction: column;
+}
+
+.spanInfo {
+    font-size: 10px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
